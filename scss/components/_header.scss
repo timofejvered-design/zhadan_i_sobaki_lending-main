@@ -1,0 +1,57 @@
+@use "../untils/variables" as *;
+
+.header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #34623F;
+        color: white;
+    }
+
+    &-navigaton-ul {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+    }
+
+    &-button-item {
+        background: #D16014;
+        color: white;
+        border: none;
+        padding: 20px 40px;
+        border-radius: 10px;
+    }
+
+    &-button-item:hover {
+        background-color: $bcg-button-hover;
+    }
+
+}
+
+li {
+    list-style: none;
+}
+
+
+
+.navigation-item {
+    color: #1E2F23;
+    text-decoration: none;
+}
+
+.current {
+    color: #D16014;
+    font-size: 21px;
+}
+
+.navigation-item:hover {
+    color: #D16014;
+    text-decoration-line: underline;
+    display: inline-block;
+    transform: scale(1.5);
+}
